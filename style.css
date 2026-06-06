@@ -633,10 +633,6 @@ body {
   transition: text-shadow 0.3s ease;
 }
 
-.footer-phone:hover {
-  text-shadow: 0 0 10px #ff0055;
-}
-
 .footer-socials {
   flex: 1;
   display: flex;
@@ -683,20 +679,6 @@ body {
 
 .social-icon {
   font-size: 18px;
-}
-
-.btn-tg:hover {
-  background-color: rgba(0, 136, 204, 0.1);
-  border-color: #0088cc;
-  box-shadow: 0 0 20px rgba(0, 136, 204, 0.4);
-  transform: translateY(-2px);
-}
-
-.btn-vk:hover {
-  background-color: rgba(0, 119, 212, 0.1);
-  border-color: #0077d4;
-  box-shadow: 0 0 20px rgba(0, 119, 212, 0.4);
-  transform: translateY(-2px);
 }
 
 .footer-bottom {
