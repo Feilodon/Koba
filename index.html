@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Burger Landing</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <img src="./images/icons/logo.png" alt="Логотип" class="header__logo">
+
+      <nav class="header__nav">
+          <a class="nav-link" href="#about">О нас</a>
+          <a class="nav-link" href="#chicken">Меню</a>
+          <a class="nav-link" href="#menu">Самовывоз</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="tel+79142227008" class="btn-header">Позвонить</a>
+    </div>
+  </header>
+
+  <main class="hero">
+    <div class="hero-overlay"></div>
+      <div class="hero-container">
+          <h4 class="hero-subtitle">Тот самый корейский бар в старом городе!</h4>
+          <h1 class="hero-title">КОБА</h1>
+          <div class="hero-buttons">
+            <a href="tel+79142227008" class="btn btn1">Забронировать стол</a>
+            <a href="#menu" class="btn btn2">Смотреть меню</a>
+        </div>
+      </div>
+  </main>
+
+  <section id="about" class="about-section">
+    <div class="about-container fadein-section">
+      <div class="about-img">
+        <img src="images/about-us.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <div class="text-group">
+          <h4 class="about-subtitle">ABOUT US</h4>
+          <h2 class="about-title">О НАС</h2>
+          <hr class="yellow-line">
+          <p class="text">Мы перенесли кусочек, шумного Сеула прямиком в наш город. 
+            Наш бар - это место про свободу, громкие разговоры и гастрономические открытия. 
+            Мы готовим ту самую культовую корейскую курочку с умопомрачительной хрустящей корочкой и 
+            миксуем авторские коктейли, которые вы больше нигде не попробуете. 
+            Залетайте на ужин с друзьями или заказывайте любимые блюда самовывозом!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="chicken" class="chicken-section">
+  <div class="chicken-container fade-in-section">
+    <div class="chicken-text-column">
+      <div class="chicken-info">
+        <h4 class="chicken-subtitle">Hot Hit</h4>
+        <h2 class="chicken-title">Курочка Тансуюк</h2>
+        <p class="chicken-description">
+          Наш гастрономический повод для гордости! Хрустящие, нежные куриные стрипсы, 
+          обжаренные до идеальной золотистой корочки. Мы подаем их в аутентичном корейском 
+          кисло-сладком соусе с добавлением овощей. Тот самый баланс вкусов, который 
+          идеально дополняет наши авторские коктейли. 
+        </p>
+        <div class="chicken-order-box">
+          <span class="chicken-price">от 549 ₽</span>
+          <a href="tel:+79991234567" class="btn-order">Хочу попробовать</a>
+        </div>
+      </div>
+    </div>
+    <div class="chicken-image">
+      <img src="images/chicken.jpg" alt="Корейская курочка Тансуюк">
+    </div>
+  </div>
+</section>
+
+<section id="cocktails" class="cocktails-section">
+  <div class="cocktails-container fade-in-section">
+    <div class="cocktails-header">
+      <h4 class="cocktails-subtitle">Уникальные вкусы</h4>
+      <h2 class="cocktails-title">Авторские коктейли</h2>
+      <hr class="yellow-line">
+    </div>
+    <div class="cocktails-grid">
+      
+      <!-- Карточка 1 -->
+      <div class="cocktail-card">
+        <div class="cocktail-img">
+          <img src="images/cocktail-1.jpg" alt="Коктейль Сеул Найт">
+        </div>
+        <div class="cocktail-info">
+          <h3>Сеул Найт</h3>
+          <p>Яркий микс на классическом корейском соджу с добавлением спелого личи и легких ноток лаванды. Освежает как ночная прогулка по Каннаму.</p>
+          <span class="price">450 ₽</span>
+        </div>
+      </div>
+      
+      <!-- Карточка 2 -->
+      <div class="cocktail-card neon-purple">
+        <div class="cocktail-img">
+          <img src="images/cocktail-2.jpg" alt="Коктейль К-Поп Сауэр">
+        </div>
+        <div class="cocktail-info">
+          <h3>К-Поп Сауэр</h3>
+          <p>Кисло-сладкий взрывной коктейль. Напиток на основе премиального джина с соком юдзу и воздушной пеной. Любимец наших постоянных гостей.</p>
+          <span class="price">480 ₽</span>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="cocktail-card">
+        <div class="cocktail-img">
+          <img src="images/cocktail-3.jpg" alt="Коктейль Психо Кимчи">
+        </div>
+        <div class="cocktail-info">
+          <h3>Психо Кимчи</h3>
+          <p>Для любителей острых ощущений. Наша пикантная корейская вариация «Кровавой Мэри» со специями кимчи. Бодрит и оставляет долгое послевкусие.</p>
+          <span class="price">470 ₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="cocktails-action">
+      <a href="tel:+79991234567" class="btn btn-primary">Забронировать стол и попробовать</a>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="menu-container fade-in-section">
+    
+    <!-- Левая колонка: Просмотр и скачивание меню -->
+    <div class="menu-card download-card">
+      <div class="menu-card-content">
+        <div class="icon-box">📋</div>
+        <h3>Полное меню бара</h3>
+        <p>Посмотрите все наши корейские закуски, горячие блюда, супы и полную барную карту в удобном формате.</p>
+        
+        <!-- Замените "menu.pdf" на реальную ссылку на ваш файл меню -->
+        <a href="menu.pdf" target="_blank" class="btn btn-menu-online">Открыть меню онлайн</a>
+        <a href="menu.pdf" download class="btn-download-link">Скачать PDF-файл</a>
+      </div>
+    </div>
+    
+    <!-- Правая колонка: Информация про самовывоз -->
+    <div class="menu-card delivery-card">
+      <div class="menu-card-content">
+        <div class="icon-box">🥡</div>
+        <h3>Заказ самовывозом</h3>
+        <p>Хотите устроиться поудобнее дома за просмотром дорамы? Приготовим вашу любимую курочку и закуски с собой всего за 20 минут!</p>
+        
+        <div class="delivery-action">
+          <a href="tel:+79991234567" class="btn btn-primary">Позвонить и заказать</a>
+          <span class="delivery-note">* Скидка 10% на все блюда с собой</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<footer id="contacts" class="footer-section">
+  <div class="footer-container">
+    <div class="footer-info">
+      <a href="#" class="footer-logo">КОБА<span class="neon-dot">.</span></a>
+      <p class="footer-tagline">Кусочек ночного Сеула в твоем городе</p>
+      
+      <div class="contact-details">
+        <p><strong>Адрес:</strong> ул. Глухой переулок, 1</p>
+        <p><strong>Режим работы:</strong> Вс–Чт: 16:00 – 01:00 | Пт–Сб: 16:00 – 02:00</p>
+        <p><strong>Бронь столов:</strong> <a href="tel:+79991234567" class="footer-phone">+7 (999) 123-45-67</a></p>
+      </div>
+    </div>
+ 
+    <div class="footer-socials">
+      <h3>Все новости в соцсетях</h3>
+      <p class="socials-desc">Мы не пишем новости на сайте. Свежие квизы, анонсы вечеринок и общение с менеджером — всё тут! Залетай:</p>
+      
+      <div class="social-buttons">
+        <a href="https://t.me" target="_blank" class="btn-social btn-tg">
+          <span class="social-icon">✈️</span> Telegram
+        </a>
+        <a href="https://vk.com" target="_blank" class="btn-social btn-vk">
+          <span class="social-icon">📱</span> ВКонтакте
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 K-BAR. Все права защищены.</p>
+  </div>
+</footer>
+</body>
+</html>
