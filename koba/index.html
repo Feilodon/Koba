@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KOBA</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <a href="#koba">
+        <img src="./images/icons/logo.png" alt="Логотип" class="header__logo"> </a>
+      <nav class="header__nav">
+          <a class="nav-link" href="#about">О нас</a>
+          <a class="nav-link" href="#chicken">Меню</a>
+          <a class="nav-link" href="#menu">Самовывоз</a>
+          <a class="nav-link" href="#contacts">Контакты</a>
+      </nav>
+
+      <a href="tel+79142227008" class="btn-header">Позвонить</a>
+    </div>
+  </header>
+
+  <main class="hero" id="koba">
+    <div class="hero-overlay"></div>
+      <div class="hero-container">
+          <h4 class="hero-subtitle">Тот самый корейский бар в старом городе!</h4>
+          <h1 class="hero-title">KOBA</h1>
+          <div class="hero-buttons">
+            <button class="btn btn1 open-booking-btn">Забронировать стол</button>
+            <button class="btn btn2 open-menu-btn">Смотреть меню</button>
+        </div>
+      </div>
+<!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ КНОПКИ "СМОТРЕТЬ МЕНЮ" -->
+<div id="menuModal" class="modal">
+    <div class="modal-content">
+        <span id="closeMenuBtn" class="close-btn">&times;</span>
+        <embed src="menu.pdf" type="application/pdf" class="pdf-viewer">
+    </div>
+</div>
+<!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ КНОПКИ "СМОТРЕТЬ МЕНЮ" -->
+
+      <!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ КНОПКИ "ЗАБРОНИРОВАТЬ"-->
+       <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-content-bron">
+      <button class="modal-close" id="closeModalBtn">&times;</button>
+      <div class="modal-title">Выберите способ связи:</div>
+      
+      <div class="options-list">
+        <a href="tel:+79243606688" class="option-btn btn-phone"> <img src="images/icons/tel.png" alt="" class="icon-btn">Позвонить
+        </a>
+        <a href="https://wa.me/79243606688" target="_blank" class="option-btn btn-whatsapp"><img src="images/icons/whatsapp.png" alt="" class="icon-btn">Написать в WhatsApp
+        </a>
+        <a href="https://t.me/kobabar" target="_blank" class="option-btn btn-telegram"><img src="images/icons/tg.png" alt="" class="icon-btn">Написать в Telegram
+        </a>
+      </div>
+    </div>
+  </div>
+  <!-- ВСПЛЫВАЮЩЕЕ ОКНО ПРИ НАЖАТИИ КНОПКИ "ЗАБРОНИРОВАТЬ"-->
+
+  </main>
+  <section id="about" class="about-section">
+    <div class="about-container fadein-section">
+      <div class="about-img">
+        <img src="images/about-us.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <div class="text-group">
+          <h4 class="about-subtitle">ABOUT US</h4>
+          <h2 class="about-title">О НАС</h2>
+          <hr class="yellow-line">
+          <p class="text">Мы перенесли кусочек, шумного Сеула прямиком в наш город. 
+            Наш бар - это место про свободу, громкие разговоры и гастрономические открытия. 
+            Мы готовим ту самую культовую корейскую курочку с умопомрачительной хрустящей корочкой и 
+            миксуем авторские коктейли, которые вы больше нигде не попробуете. 
+            Залетайте на ужин с друзьями или заказывайте любимые блюда самовывозом!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<section id="chicken" class="chicken-section">
+  <div class="chicken-container fade-in-section">
+    <div class="chicken-text-column">
+      <div class="chicken-info">
+        <h4 class="chicken-subtitle">Hot Hit</h4>
+        <h2 class="chicken-title">Курочка Тансуюк</h2>
+        <p class="chicken-description">
+          Наш гастрономический повод для гордости! Хрустящие, нежные куриные стрипсы, 
+          обжаренные до идеальной золотистой корочки. Мы подаем их в аутентичном корейском 
+          кисло-сладком соусе с добавлением овощей. Тот самый баланс вкусов, который 
+          идеально дополняет наши авторские коктейли. 
+        </p>
+        <div class="chicken-order-box">
+          <span class="chicken-price">от 547 ₽</span>
+          <button class="btn-order open-booking-btn">Хочу попробовать</button>
+        </div>
+      </div>
+    </div>
+    <div class="chicken-image">
+      <img src="images/chicken.jpg" alt="Корейская курочка Тансуюк">
+    </div>
+  </div>
+</section>
+
+<section id="cocktails" class="cocktails-section">
+  <div class="cocktails-container fade-in-section">
+    <div class="cocktails-header">
+      <h4 class="cocktails-subtitle">Crafted Hits</h4>
+      <h2 class="cocktails-title">Авторские коктейли</h2>
+      <hr class="yellow-line">
+    </div>
+    <div class="cocktails-grid">
+      
+      <!-- Карточка 1 -->
+      <div class="cocktail-card">
+        <div class="cocktail-img">
+          <img src="images/cocktail-1.jpg" alt="Коктейль Сеул Найт">
+        </div>
+        <div class="cocktail-info">
+          <h3>Haerin</h3>
+          <p>Коктейль, насыщенный вкусами, как феерия цветов на вечернем небе.</p>
+          <span class="price">497 ₽</span>
+        </div>
+      </div>
+      
+      <!-- Карточка 2 -->
+      <div class="cocktail-card neon-purple">
+        <div class="cocktail-img">
+          <img src="images/cocktail-2.jpg" alt="Коктейль К-Поп Сауэр">
+        </div>
+        <div class="cocktail-info">
+          <h3>Hyein</h3>
+          <p>Это сочетание ярких фруктов, которые превратят ваш вечер в праздник!</p>
+          <span class="price">497 ₽</span>
+        </div>
+      </div>
+
+      <!-- Карточка 3 -->
+      <div class="cocktail-card">
+        <div class="cocktail-img">
+          <img src="images/cocktail-3.jpg" alt="Коктейль Психо Кимчи">
+        </div>
+        <div class="cocktail-info">
+          <h3>Danielle</h3>
+          <p>Коктейль, который взбодрит ваши чувства с первой капли! Деликатный и сбалансированный, он идеально подходит для начала вечера.</p>
+          <span class="price">497 ₽</span>
+        </div>
+      </div>
+    </div>
+    <div class="cocktails-action">
+      <button class="btn-bron open-booking-btn">Забронировать стол и попробовать</button>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="menu-section">
+  <div class="menu-container fade-in-section">
+    <div class="menu-card download-card">
+      <div class="menu-card-content">
+        <div class="icon-box">
+          <img src="images/icons/menu.png" alt="меню иконка" class="icon-menu">
+        </div>
+        <h3>Полное меню бара</h3>
+        <p>Посмотрите все наши корейские закуски, горячие блюда, супы и полную барную карту в удобном формате.</p>
+        <a href="menu.pdf" target="_blank" class="btn btn-menu-online open-menu-btn">Открыть меню онлайн</a>
+        <a href="menu.rar" class="btn-download-link">Скачать PDF-файл</a>
+      </div>
+    </div>
+    
+    <div class="menu-card delivery-card">
+      <div class="menu-card-content">
+        <div class="icon-box">
+          <img src="images/icons/sam.png" alt="самовывоз иконка" class="icon-menu">
+        </div>
+        <h3>Заказ самовывозом</h3>
+        <p>Хотите устроиться поудобнее дома за просмотром дорамы? Приготовим вашу любимую курочку и закуски с собой всего за 20 минут!</p>
+        <div class="delivery-action">
+          <a href="tel:+79243606688" class="btn-bron2">Позвонить и заказать</a>
+          <span class="delivery-note">* Скидка 10% на все блюда с собой</span>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<footer id="contacts" class="footer-section">
+  <div class="footer-container">
+    <div class="footer-info">
+      <a href="#" class="footer-logo">KOBA</a>
+      <p class="footer-tagline">Кусочек ночного Сеула в твоем городе</p>
+      
+      <div class="contact-details">
+        <p><strong>Адрес:</strong> ул. Глухой переулок, 1</p>
+        <p><strong>Режим работы:</strong> Вс–Чт: 16:00 – 01:00 | Пт–Сб: 16:00 – 02:00</p>
+        <p><strong>Бронь столов:</strong> <a href="tel:+79243606688" class="footer-phone">+7 (924) 360 66-88</a></p>
+      </div>
+    </div>
+ 
+    <div class="footer-socials">
+      <h3>Все новости в соцсетях</h3>
+      <p class="socials-desc">Мы не пишем новости на сайте. Свежие квизы, анонсы вечеринок и общение с менеджером — всё тут! Залетай:</p>
+      
+      <div class="social-buttons">
+        <a href="https://t.me/kobanastarom" target="_blank" class="btn-social btn-tg">
+          <span class="social-icon"><img src="images/icons/tg.png" alt="телеграм" class="icon-btn"></span> Telegram
+        </a>
+        <a href="https://instagram.com/kobanastarom" target="_blank" class="btn-social btn-vk">
+          <span class="social-icon"><img src="images/icons/insta.png" alt="инстаграм" class="icon-btn"></span> Instagram
+        </a>
+      </div>
+    </div>
+    
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 KOBA. Все права защищены. Курсовая работа студента 1 курса Павлова Анжелла ПИ-25Б</p>
+  </div>
+</footer>
+ <script src="java.js"></script>
+</body>
+</html>
